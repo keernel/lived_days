@@ -1,0 +1,10 @@
+.container
+  .jumbotron
+    %link{:rel => 'stylesheet', :href => '../css/bootstrap.css', :type => "text/css"}
+    %h2
+      Lived Days 
+    %form{:action=>"/calculate",:method=>"post"} 
+      %p
+        %input{:type=>"text",:name=>"born_date", :value=>"Born Date"}
+      %p
+        %input{:type=>"submit",:value=>"Calculate"}
